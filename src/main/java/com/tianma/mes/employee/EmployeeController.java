@@ -1,5 +1,8 @@
 package com.tianma.mes.employee;
 
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.RestController;
+
 /**
  * mes -com.tianma.mes.employee
  * Description:
@@ -9,5 +12,10 @@ package com.tianma.mes.employee;
  * @time: 09:49
  * @version: 1.0
  **/
+@RestController
 public class EmployeeController {
+
+	@Autowired
+	Employee employee;
+
 }

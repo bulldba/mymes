@@ -20,6 +20,10 @@ public class Employee {
 
 	private String name;
 
+	public Employee(Integer id, String name) {
+		this.id = id;
+		this.name = name;
+	}
 
 	@Cacheable(cacheNames = "emp", key = "#id")
 	public int insertEmp(Employee employee) {
